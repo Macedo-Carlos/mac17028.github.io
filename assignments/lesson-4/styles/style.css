@@ -6,13 +6,16 @@ header {
 
 #logo {
     float: left;
+    display: inline-block;
 }
 
 #siteTitle, #subTitle {
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
 }
 
 #current {
     float: right;
+    display: inline-block;
 }
