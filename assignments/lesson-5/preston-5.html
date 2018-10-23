@@ -9,18 +9,103 @@
     <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/large-5.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="styles/large-5.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Raleway" rel="stylesheet">
+    <style>
+
+        header {
+            background-color: #ffe343;
+            position: relative;
+            height: 200px;
+        }
+
+        #logo {
+            float: left;
+            margin: 0;
+            margin-left: 5%;
+            width: 25%;
+            height: 100%;
+            
+        }
+
+        #current {
+            float: left;
+            margin: 0;
+            margin-top: 10px;
+            margin-left: 2%;
+            width: 30%;
+            height: 85%;
+            
+        }
+
+        #current img {
+            float: left;
+            margin: 0;
+            margin-top: 14px;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 30%;
+            height: 75%;
+            
+       }
+
+        #currentConditions {
+            float: left;
+            margin: 0;
+            margin-top: 14px;
+            margin-right: 5%;
+            width: 45%;
+            height: 75%;
+            
+            line-height: .5;
+            color: #7e4f04;
+            font-size: .75em;
+            font-weight: bolder;
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+        }
+
+        #siteTitle {
+            float: left;
+            margin: 0;
+            text-align: center;
+            width: 35%;
+            height: 100%;
+            
+            
+        }
+
+        #siteTitle h1, h2 {
+            color: #7e4f04;
+            
+        }
+
+        #siteTitle h1 {
+            font: "Alegreya", Times, serif;
+            font-size: 4em;
+            line-height: .5;
+        }
+
+        
+    </style>
 </head>
 <body>
 
 <div>
     <header>
-        <div id="logo"><img src="#" alt="Shiny Days Logo"/></div>
-        <div id="siteTitle"><h1>Shiny Days</h1></div>
-        <div id="subTitle"><h2>"Preston, Soda Springs and Fish Haven"</h2></div>
-        <div id="current">
-            <img src="#" alt="Current Contitions"/>
-            <p>Current Conditions</p>
+        <div id="logo"><img src="/images/shiny-days-logo.png" hight="200px" width="200px" alt="Shiny Days Logo"/></div>
+        
+        <div id="siteTitle">
+            <h1>Shiny Days</h1>
+            <h2>"Reliable Weather Information"</h2>
         </div>
+        <div id="current">
+            <img src="/images/current-conditions.png" alt="Current Contitions"/>
+            <div id="currentConditions">
+                <p>Temperature: 73 &#176F</p>
+                <p>Precipitation: 0%</p>
+                <p>Humidity: 25%</p>
+                <p>Wind: 6 mph</p>
+            </div>
+        </div>     
+        
     </header>
     
     <nav>
