@@ -28,6 +28,7 @@
 
         #logo img {
             width: 100%;
+            margin-top: 10px;
         }
 
         #current {
@@ -40,15 +41,18 @@
             
         }
 
-        #current img {
+        #currentImg {
             float: left;
             margin: 0;
             margin-top: 14px;
             margin-left: 5%;
             margin-right: 5%;
-            width: 100%;
-            
-            
+            width: 30%;           
+       }
+
+       #currentImg img {
+           width:100%;
+           margin-top: 10px;
        }
 
         #currentConditions {
@@ -94,14 +98,17 @@
 
 <div>
     <header>
-        <div id="logo"><img src="/assignments/lesson-5/images/shiny-days-logo.png" hight="200px" width="200px" alt="Shiny Days Logo"/></div>
+        <div id="logo"><img src="/assignments/lesson-5/images/shiny-days-logo.png" alt="Shiny Days Logo"/></div>
         
         <div id="siteTitle">
             <h1>Shiny Days</h1>
             <h2>"Reliable Weather Information"</h2>
         </div>
+        
         <div id="current">
+            <div id="currentImg">
             <img src="/assignments/lesson-5/images/current-conditions.png" alt="Current Contitions"/>
+            </div>
             <div id="currentConditions">
                 <p>Temperature: 73 &#176F</p>
                 <p>Precipitation: 0%</p>
