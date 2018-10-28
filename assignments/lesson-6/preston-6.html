@@ -1,0 +1,213 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shiny Days (Preston)</title>
+    <meta name="description" content="Shiny Days provides useful weather information for the cities of Preston, Soda Springs and Fish Haven">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="screen and (max-width: 859px)" href="styles/large-5.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+
+        header {
+            background-color: #ffe343;
+            position: relative;
+            height: 200px;
+        }
+
+        #logo {
+            float: left;
+            margin: 0;
+            margin-left: 10%;
+            width: 15%;
+            height: 100%;
+            border: 3px solid red;
+        }
+
+        #logo img {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            max-height: 180px;
+        }
+
+        #current {
+            display: none;
+            float: left;
+            margin: 0;
+            margin-top: 15px;
+            margin-left: 2%;
+            width: 30%;
+            height: 80%;
+            background: #ffb443;
+            border: 3px solid red;            
+        }
+
+                #currentImg {
+            float: left;
+            margin: 0;
+            margin-top: 14px;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 20%;
+            height: 75%;
+            border: 3px solid red;         
+       }
+
+       #currentImg img {
+           width:100%;
+        }
+
+        #currentConditions {
+            float: left;
+            margin: 0;
+            margin-top: 14px;
+            margin-right: 5%;
+            width: 60%;
+            height: 75%;
+            line-height: .5;
+            color: #7e4f04;
+            font-size: .75em;
+            font-weight: bolder;
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            border: 3px solid red;
+        }
+
+        #siteTitle {
+            float: left;
+            margin: 0;
+            text-align: center;
+            width: 70%;
+            height: 100%;
+            
+            
+        }
+
+        #siteTitle h1, h2 {
+            color: #7e4f04;
+            
+        }
+
+        #siteTitle h1 {
+            font: "Alegreya SC", Times, serif;
+            font-size: 4em;
+            line-height: .5;
+        }
+
+        @media only screen and (min-width: 860px) {
+            #current {display: block;}
+            #siteTitle {width: 40%;}
+        }
+        
+    </style>
+</head>
+<body>
+
+<div>
+    <header>
+        <div id="logo"><img src="/assignments/lesson-5/images/shiny-days-logo.png" alt="Shiny Days Logo"/></div>
+        
+        <div id="siteTitle">
+            <h1>Shiny Days</h1>
+            <h2>"Reliable Weather Information"</h2>
+        </div>
+        
+        <div id="current">
+            <div id="currentImg">
+            <img src="/assignments/lesson-5/images/current-conditions.png" alt="Current Contitions"/>
+            </div>
+            <div id="currentConditions">
+                <p>Temperature: 73 &#176F</p>
+                <p>Precipitation: 0%</p>
+                <p>Humidity: 25%</p>
+                <p>Wind: 6 mph</p>
+            </div>
+        </div>     
+        
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Town Name</h1>
+
+        <section id="heroSection">
+            <img src="#" alt="Hero Image"/>
+            <div class="weatherDetails">
+                <h3>Weather Summary</h3>
+                <p class="label">Currently:</p>
+                <p class="value">Sunny</p>
+                <p class="label">Temperature:</p>
+                <p class="value">76 &deg;F</p>
+                <p class="label">Humidity:</p>
+                <p class="value">69%</p>
+                <p class="label">Precipitation:</p>
+                <p class="value">0 inches</p>
+                <p class="label">Wind Speed:</p>
+                <p class="value">5 mph</p>
+            </div>            
+        </section>
+
+        <section id="fiveDay">
+            <h3>High Temperature Forecast</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Forecast</th>
+                  <td>89&deg;F</td>
+                  <td>87&deg;F</td>
+                  <td>78&deg;F</td>
+                  <td>75&deg;F</td>
+                  <td>72&deg;F</td>
+                </tr>
+              </tbody>
+            </table>        
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>Article content.</p>
+            <img src="#" alt="Article Image"/>            
+        </article>
+
+        <section id="contactInfo">
+            <img src="#" alt="Map"/>
+            <h3>Contact Info</h3>
+            <p>Information about the contact.</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2018 |  Shiny Days Weather Reports</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
