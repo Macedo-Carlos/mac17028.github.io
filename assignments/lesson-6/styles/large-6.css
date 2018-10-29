@@ -1,4 +1,2 @@
-@media only screen and (min-width: 860px) {
-    #current {display: block;}
-    #siteTitle {width: 40%;}
-}
+#current {display: block;}
+#siteTitle {width: 40%;}
