@@ -29,7 +29,11 @@ header {
     width: 30%;
     height: 80%;
     background: #ffb443;
-    border: 3px solid red;            
+    border: 3px solid red;         
+}
+
+#fiveDay {
+    display: none;
 }
 
         #currentImg {
