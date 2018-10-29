@@ -87,8 +87,6 @@ header {
     text-align: center;
     width: 70%;
     height: 100%;
-    
-    
 }
 
 #siteTitle h1, h2 {
@@ -135,7 +133,7 @@ nav li a:hover {
     background-color: #ffa20d;
 }
 
-/*Main Title*/
+/*Main Title Style*/
 main h1 {
     font-family: 'Alegreya SC', Times, serif;
     font-weight: bolder;
@@ -143,6 +141,20 @@ main h1 {
     text-align: center;
     font-size: 2.5em;
 }
+
+/*Footer Style*/
+
+footer {
+    background-color: #ffe343;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#7e4f04;
+}
+
 
 /*Large Screen Styles*/
 
@@ -263,10 +275,56 @@ nav li a {display: inline;}
     </main>
 
     <footer>
-        <p>Copyright &copy;2018 |  Shiny Days Weather Reports</p>
+        <p>Copyright &copy;2018&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Shiny Days Weather Reports&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span></p>
     </footer>
 
 </div>
+
+<script>
+        var d = new Date();
+        
+        var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+        
+        var wd = weekday[d.getDay()];
+        document.getElementById("weekday").innerHTML = wd;
+        
+        var monthday = new Array(12);
+            monthday[0] = "January";
+            monthday[1] = "February";
+            monthday[2] = "March";
+            monthday[3] = "April";
+            monthday[4] = "May";
+            monthday[5] = "June";
+            monthday[6] = "July";
+            monthday[7] = "August";
+            monthday[8] = "September";
+            monthday[9] = "October";
+            monthday[10] = "November";
+            monthday[11] = "December";
+            
+        var md = monthday[d.getMonth()];
+        document.getElementById("month").innerHTML = md;
+        
+        
+        
+        
+        var day = d.getDate();
+        document.getElementById("day").innerHTML = day;
+        var year = d.getFullYear();
+        document.getElementById("year").innerHTML = year;
+        
+        document.getElementById("demo").innerHTML = d;
+        
+        </script>
 
 </body>
 
