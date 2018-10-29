@@ -32,11 +32,7 @@ header {
     border: 3px solid red;         
 }
 
-#fiveDay {
-    display: none;
-}
-
-        #currentImg {
+#currentImg {
     float: left;
     margin: 0;
     margin-top: 14px;
@@ -87,3 +83,6 @@ header {
     line-height: .5;
 }
 
+#fiveDay {
+    display: none;
+}

@@ -12,6 +12,151 @@
     <link rel="stylesheet" href="/styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<style>
+
+/*Header Styles*/
+
+header {
+    background-color: #ffe343;
+    position: relative;
+    height: 200px;
+}
+
+#logo {
+    float: left;
+    margin: 0;
+    margin-left: 10%;
+    width: 15%;
+    height: 100%;
+    border: 3px solid red;
+}
+
+#logo img {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 180px;
+}
+
+#current {
+    display: none;
+    float: left;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 2%;
+    width: 30%;
+    height: 80%;
+    background: #ffb443;
+    border: 3px solid red;         
+}
+
+#currentImg {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    height: 75%;
+    border: 3px solid red;         
+}
+
+#currentImg img {
+    width:100%;
+}
+
+#currentConditions {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 5%;
+    width: 60%;
+    height: 75%;
+    line-height: .5;
+    color: #7e4f04;
+    font-size: .75em;
+    font-weight: bolder;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    border: 3px solid red;
+}
+
+#siteTitle {
+    float: left;
+    margin: 0;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    
+    
+}
+
+#siteTitle h1, h2 {
+    color: #7e4f04;
+    
+}
+
+#siteTitle h1 {
+    font-family: 'Alegreya SC', Times, serif;
+    font-size: 4em;
+    line-height: .5;
+}
+
+/*Hidden Five Day Forecast*/
+
+#fiveDay {
+    display: none;
+}
+
+/*Navigation Bar Styles*/
+
+nav ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    background-color: #d9ff43;
+    text-align: center;
+}
+
+nav li {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color:#7e4f04;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ffa20d;
+}
+
+/*Main Title*/
+main h1 {
+    font-family: 'Alegreya SC', Times, serif;
+    font-weight: bolder;
+    color:#7e4f04;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/*Large Screen Styles*/
+
+@media screen and (min-width: 860px) {
+#current {display: block;}
+#fiveDay {display: block;}
+#siteTitle {width: 40%;}
+nav li {display: inline;}
+nav li a {display: inline;}
+}
+
+</style>
+
+
 </head>
 
 <body>
@@ -60,6 +205,8 @@
                 <source media="(max-width: 859px)" srcset="/assignments/lesson-6/images/franklin-small.JPEG">
                 <img src="/assignments/lesson-6/images/franklin-small.jpg" alt="Hero Image" style="width: 100%;"/>
             </picture>
+            
+           
             <div class="weatherDetails">
                 <h3>Weather Summary</h3>
                 <p class="label">Currently:</p>
