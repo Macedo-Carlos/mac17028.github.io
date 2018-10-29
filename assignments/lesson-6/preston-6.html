@@ -55,7 +55,13 @@
         <h1>Town Name</h1>
 
         <section id="heroSection">
-            <img src="#" alt="Hero Image"/>
+            <picture>
+                <source media="(min-width: 860px)" srcset="/assignments/lesson-6/images/franklin-large.JPEG">
+                <source media="(max-width: 859px)" srcset="/assignments/lesson-6/images/franklin-small.JPEG">
+                <img src="/assignments/lesson-6/images/franklin-small.jpg" alt="Hero Image" style="width: 100%;"/>
+            </picture>
+            
+           
             <div class="weatherDetails">
                 <h3>Weather Summary</h3>
                 <p class="label">Currently:</p>
