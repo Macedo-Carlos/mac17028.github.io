@@ -12,7 +12,7 @@ header {
     margin-left: 2%;
     width: 25%;
     height: 100%;
-    border: 3px solid red;
+    
 }
 
 #logo img {
@@ -31,7 +31,7 @@ header {
     width: 30%;
     height: 80%;
     background: #ffb443;
-    border: 3px solid red;         
+             
 }
 
 #currentImg {
@@ -42,7 +42,7 @@ header {
     margin-right: 5%;
     width: 30%;
     height: 75%;
-    border: 3px solid red;         
+            
 }
 
 #currentImg img {
@@ -62,7 +62,7 @@ header {
     font-size: .75em;
     font-weight: bolder;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    border: 3px solid red;
+    
 }
 
 #siteTitle {
@@ -150,4 +150,10 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*Map Style*/
+
+.mapPreston {
+    max-width: 100%;
 }
