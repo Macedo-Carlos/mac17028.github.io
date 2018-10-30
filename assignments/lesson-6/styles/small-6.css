@@ -69,7 +69,7 @@ header {
     float: left;
     margin: 0;
     text-align: center;
-    width: 80%;
+    width: 65%;
     height: 100%;
 }
 
@@ -85,7 +85,7 @@ header {
 }
 
 #siteTitle h2 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /*Hidden Five Day Forecast*/
