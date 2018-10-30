@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Responsive Menu</title>
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+* {margin:0}
+header { background-color: #777; }
+h1 { margin-left: .75rem;	padding: .5rem; }
+.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.5em) {
+	.responsive { position: relative; }
+	.responsive li { background-color: #eee;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
+	.responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; }
+	.responsive li a:hover { background-color: #ddd; }
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
+    right: 1.5rem; top: 1.8rem;
     display: block;
-    text-align: left;
-  }
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+
+@media only screen and (min-width: 37.5em) {
+	header,	nav {	margin: 0 auto;	max-width: 600px;	}
+	h1 { text-align: center; }
+	.hamburger { display: none;	}
+	.navigation {	background-color: #333;	overflow: hidden;	text-align: center;	}
+	.navigation li { display: inline-block; margin-left: .25rem; }
+	.navigation a {	display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;}
+	.navigation a:hover {	color: #000; background-color: #777;	}
 }
 </style>
 </head>
