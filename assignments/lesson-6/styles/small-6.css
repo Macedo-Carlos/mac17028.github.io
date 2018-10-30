@@ -1,20 +1,22 @@
+/*Header Styles*/
+
 header {
     background-color: #ffe343;
     position: relative;
-    height: 200px;
+    height: 150px;
 }
 
 #logo {
     float: left;
     margin: 0;
-    margin-left: 10%;
-    width: 15%;
+    margin-left: 2%;
+    width: 25%;
     height: 100%;
     border: 3px solid red;
 }
 
 #logo img {
-    width: 100%;
+    max-width: 100%;
     margin-top: auto;
     margin-bottom: auto;
     max-height: 180px;
@@ -38,13 +40,14 @@ header {
     margin-top: 14px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 20%;
+    width: 30%;
     height: 75%;
     border: 3px solid red;         
 }
 
 #currentImg img {
     width:100%;
+    max-height: 100%;
 }
 
 #currentConditions {
@@ -52,13 +55,13 @@ header {
     margin: 0;
     margin-top: 14px;
     margin-right: 5%;
-    width: 60%;
+    width: 50%;
     height: 75%;
     line-height: .5;
     color: #7e4f04;
     font-size: .75em;
     font-weight: bolder;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     border: 3px solid red;
 }
 
@@ -66,10 +69,8 @@ header {
     float: left;
     margin: 0;
     text-align: center;
-    width: 70%;
+    width: 80%;
     height: 100%;
-    
-    
 }
 
 #siteTitle h1, h2 {
@@ -78,11 +79,75 @@ header {
 }
 
 #siteTitle h1 {
-    font: "Alegreya SC", Times, serif;
-    font-size: 4em;
+    font-family: 'Alegreya SC', Times, serif;
+    font-size: 2.5em;
     line-height: .5;
 }
 
+#siteTitle h2 {
+    font-size: 1.5em;
+}
+
+/*Hidden Five Day Forecast*/
+
 #fiveDay {
     display: none;
+}
+
+/*Navigation Bar Styles*/
+
+nav ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    background-color: #d9ff43;
+    text-align: center;
+}
+
+nav li {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color:#7e4f04;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ffa20d;
+}
+
+/*Main Area Style*/
+main h1 {
+    font-family: 'Alegreya SC', Times, serif;
+    font-weight: bolder;
+    color:#7e4f04;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/*Footer Style*/
+
+footer {
+    background-color: #ffe343;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#7e4f04;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
