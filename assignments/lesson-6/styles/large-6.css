@@ -4,10 +4,13 @@
     #current {display: block;}
     #fiveDay {display: block;}
     #siteTitle {width: 40%;}
-    nav li {display: inline;}
-    nav li a {display: inline;}
+    .navigation {list-style-type: none; padding: 8px; margin: 0; width: 100%; background-color: #d9ff43; text-align: center;}
+    .navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: bold;}
+    .navigation li a {display: inline; color:#7e4f04; padding: 8px 16px; text-decoration: none;}
+    .navigation li a:hover {background-color: #ffa20d;}
     #logo {margin-left: 10%; width: 15%;}
     #siteTitle h1 {font-size: 4em; font-weight: bold; line-height: .5;}
     #siteTitle h2 {font-size: 1.5em;}
-    header {height: 200px;}    
+    header {height: 200px;}
+    .hamburger { display: none;	}
     }

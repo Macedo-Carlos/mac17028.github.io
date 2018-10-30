@@ -36,12 +36,13 @@
                 <p>Humidity: 25%</p>
                 <p>Wind: 6 mph</p>
             </div>
-        </div>     
-        
+        </div>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
     </header>
     
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -129,6 +130,14 @@
 </div>
 
 <script src="scripts/currentdate.js"></script>
+
+<script>
+
+        function toggleHam() {
+            document.getElementsByClassName("navigation")[0].classList.toggle("responsiveNav");
+        }
+        
+        </script>
 
 </body>
 
