@@ -2,8 +2,6 @@
 
 #current {display: block;}
 
-#fiveDay {display: block;}
-
 #siteTitle {width: 40%;}
 
 #logo {margin-left: 10%; width: 15%;}
@@ -12,10 +10,33 @@
 header {height: 200px;}
 .hamburger { display: none;	}
 
-.navigation {list-style-type: none; padding: 8px; margin: 0; width: 100%; background-color: #d9ff43; text-align: center;}
+.navigation {
+    list-style-type: none;
+    padding: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0; width: 100%;
+    background-color:
+    #d9ff43;
+    text-align: center;
+}
 .navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: bold;}
 .navigation li a {display: inline; color:#7e4f04; padding: 8px 16px; text-decoration: none;}
 .navigation li a:hover {background-color: #ffa20d;}
 
 .weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px;}
 .weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px;}
+
+#fiveDay {display: block; width: 100%; text-align: center; background-color: #d9ff43; padding-bottom: 30px;}
+#fiveDay h2 {font-family: 'Alegreya SC', Times, serif; padding-top: 15px; color:#7e4f04}
+#fiveDay table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    min-width: 600px;
+    border: 1px solid rgb(156, 156, 156);
+}
+#fiveDay table th {
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
