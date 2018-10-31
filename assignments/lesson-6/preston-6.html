@@ -56,28 +56,67 @@
 
         <h1>Preston</h1>
 
-        <section id="heroSection">
-            <picture>
+        <section class="heroSection">
+            <div class="heroImage">
+                <picture class="heroImage">
                 <source media="(min-width: 860px)" srcset="images/franklin-large.jpg">
                 <source media="(max-width: 859px)" srcset="images/franklin-small.jpg">
                 <img src="images/franklin-small.jpg" alt="Hero Image" style="width: 100%;"/>
-            </picture>
+            </div>   
             
-           
             <div class="weatherDetails">
                 <h3>Weather Summary</h3>
-                <p class="label">Currently:</p>
-                <p class="value">Sunny</p>
-                <p class="label">Temperature:</p>
-                <p class="value">76 &deg;F</p>
-                <p class="label">Humidity:</p>
-                <p class="value">69%</p>
-                <p class="label">Precipitation:</p>
-                <p class="value">0 inches</p>
-                <p class="label">Wind Speed:</p>
-                <p class="value">5 mph</p>
-            </div>            
+                <table>
+                    <tr>
+                        <td>Currently:</td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td>76 &deg;F</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td>69%</td>
+                    </tr>
+                    <tr>
+                        <td>Precipitation:</td>
+                        <td>0 inches</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td>5 mph</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="weatherDetails2">
+                    <h3>Weather Summary</h3>
+                    <table>
+                        <tr>
+                            <td>Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td>76 &deg;F</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td>69%</td>
+                        </tr>
+                        <tr>
+                            <td>Precipitation:</td>
+                            <td>0 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td>5 mph</td>
+                        </tr>
+                    </table>
+                </div>         
         </section>
+        
 
         <section id="fiveDay">
             <h3>High Temperature Forecast</h3>

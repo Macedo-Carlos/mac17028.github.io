@@ -1,16 +1,21 @@
 /*Large Screen Styles*/
 
-@media screen and (min-width: 860px) {
-    #current {display: block;}
-    #fiveDay {display: block;}
-    #siteTitle {width: 40%;}
-    .navigation {list-style-type: none; padding: 8px; margin: 0; width: 100%; background-color: #d9ff43; text-align: center;}
-    .navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: bold;}
-    .navigation li a {display: inline; color:#7e4f04; padding: 8px 16px; text-decoration: none;}
-    .navigation li a:hover {background-color: #ffa20d;}
-    #logo {margin-left: 10%; width: 15%;}
-    #siteTitle h1 {font-size: 4em; font-weight: bold; line-height: .5;}
-    #siteTitle h2 {font-size: 1.5em;}
-    header {height: 200px;}
-    .hamburger { display: none;	}
-    }
+#current {display: block;}
+
+#fiveDay {display: block;}
+
+#siteTitle {width: 40%;}
+
+#logo {margin-left: 10%; width: 15%;}
+#siteTitle h1 {font-size: 4em; font-weight: bold; line-height: .5;}
+#siteTitle h2 {font-size: 1.5em;}
+header {height: 200px;}
+.hamburger { display: none;	}
+
+.navigation {list-style-type: none; padding: 8px; margin: 0; width: 100%; background-color: #d9ff43; text-align: center;}
+.navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: bold;}
+.navigation li a {display: inline; color:#7e4f04; padding: 8px 16px; text-decoration: none;}
+.navigation li a:hover {background-color: #ffa20d;}
+
+.weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px;}
+.weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px;}

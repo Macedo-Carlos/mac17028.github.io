@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shiny Days (Preston)</title>
+    <meta name="description" content="Shiny Days provides useful weather information for the cities of Preston, Soda Springs and Fish Haven">
+    
+    <style>
+
+        .heroSection {
+            border: 3px solid red;
+            position: relative;
+        }
+        .weatherDetails {
+            position: absolute;
+            top: 12px;
+            left: 20px;
+        }
+
+        
+
+    
+    </style>
+</head>
+
+<body>
+
+<div>
+    
+    <section class="heroSection">
+        <div class="heroImage">
+            <picture class="heroImage">
+            <source media="(min-width: 860px)" srcset="images/franklin-large.jpg">
+            <source media="(max-width: 859px)" srcset="images/franklin-small.jpg">
+            <img src="images/franklin-small.jpg" alt="Hero Image" style="width: 100%;"/>
+        </div>   
+        
+        <div class="weatherDetails">
+            <h3>Weather Summary</h3>
+            <table>
+                <tr>
+                    <td>Currently:</td>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <td>Temperature:</td>
+                    <td>76 &deg;F</td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td>69%</td>
+                </tr>
+                <tr>
+                    <td>Precipitation:</td>
+                    <td>0 inches</td>
+                </tr>
+                <tr>
+                    <td>Wind Speed:</td>
+                    <td>5 mph</td>
+                </tr>
+            </table>
+        </div>         
+    </section>
+    
+</div>
+
+</body>
+
+</html>
