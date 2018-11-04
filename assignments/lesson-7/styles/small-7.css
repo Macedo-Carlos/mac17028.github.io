@@ -1,0 +1,216 @@
+/*Header Styles*/
+
+header {
+    background-color: #ffe343;
+    position: relative;
+    height: 150px;
+}
+
+#logo {
+    float: left;
+    margin: 0;
+    margin-left: 2%;
+    width: 25%;
+    height: 100%;
+    
+}
+
+#logo img {
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 180px;
+}
+
+#current {
+    display: none;
+    float: left;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 2%;
+    width: 30%;
+    height: 80%;
+    background: #ffb443;
+             
+}
+
+#currentImg {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 75%;
+            
+}
+
+#currentImg img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+#currentConditions {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 5%;
+    width: 50%;
+    height: 75%;
+    line-height: .5;
+    color: #7e4f04;
+    font-size: .75em;
+    font-weight: bolder;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+}
+
+#siteTitle {
+    float: left;
+    margin: 0;
+    text-align: center;
+    width: 65%;
+    height: 100%;
+}
+
+#siteTitle h1, h2 {
+    color: #7e4f04;
+    
+}
+
+#siteTitle h1 {
+    font-family: 'Alegreya SC', Times, serif;
+    font-size: 2.5em;
+    line-height: .5;
+}
+
+#siteTitle h2 {
+    font-size: 1em;
+}
+
+/* Responsive Nav*/
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 110px;
+    right: 1rem;
+    background-color: #ffb443;
+    border: none;
+    color: #7e4f04;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #7e4f04;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/*Navigation Bar Styles*/
+
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+.responsiveNav {
+    list-style-type: none;
+    padding: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #d9ff43;
+    text-align: center;
+}
+
+.responsiveNav li {
+    display: block;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.responsiveNav li a {
+    display: block;
+    color:#7e4f04;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.responsiveNav li a:hover {
+    background-color: #ffa20d;
+}
+
+/*Main Area Style*/
+main h1 {
+    font-family: 'Alegreya SC', Times, serif;
+    font-weight: bolder;
+    color:#7e4f04;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/*Weather Summary Styles*/
+
+.heroSection {
+    position: relative;
+}
+
+.weatherDetails {
+    position: absolute;
+    padding: .5em;
+    padding-top: 0;
+    top: 3px;
+    left: 5px;
+    background-color: white;
+    opacity: .5;
+}
+.weatherDetails h3, table {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+}
+
+.weatherDetails2 {
+    position: absolute;
+    padding: .5em;
+    padding-top: 0;
+    top: 3px;
+    left: 5px;
+   
+}
+.weatherDetails2 h3, table {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+}
+
+/*Hidden Five Day Forecast*/
+
+#fiveDay {
+    display: none;
+}
+
+/*Footer Style*/
+
+footer {
+    background-color: #ffe343;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#7e4f04;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Map Style*/
+
+.mapPreston {
+    max-width: 100%;
+}
