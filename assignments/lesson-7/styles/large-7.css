@@ -1,7 +1,5 @@
 /*Large Screen Styles*/
 
-#current {display: block;}
-
 #siteTitle {width: 40%;}
 
 #logo {margin-left: 10%; width: 15%;}
@@ -10,25 +8,70 @@
 header {height: 200px;}
 .hamburger { display: none;	}
 
+#current {
+    display: block;
+    float: left;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 2%;
+    width: 30%;
+    height: 80%;
+    background: #48E5C2;
+    border-radius: 15px;
+}
+
+#currentImg {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 75%;
+            
+}
+
+#currentImg img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+#currentConditions {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 5%;
+    width: 50%;
+    height: 75%;
+    line-height: .5;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
 .navigation {
     list-style-type: none;
     padding: 8px;
     padding-left: 0;
     padding-right: 0;
     margin: 0; width: 100%;
-    background-color:
-    #d9ff43;
+    background-color: #09143A;
     text-align: center;
 }
-.navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: bold;}
-.navigation li a {display: inline; color:#7e4f04; padding: 8px 16px; text-decoration: none;}
-.navigation li a:hover {background-color: #ffa20d;}
+.navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: normal;}
+.navigation li a {display: inline; color:#FCFAF9; padding: 8px 16px; text-decoration: none;}
+.navigation li a:hover {text-decoration: underline;}
+
+main h1 {
+    font-size: 5em;
+}
 
 .weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px;}
 .weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px;}
 
-#fiveDay {display: block; width: 100%; text-align: center; background-color: #d9ff43; padding-bottom: 30px;}
-#fiveDay h2 {font-family: 'Alegreya SC', Times, serif; padding-top: 15px; color:#7e4f04}
+#fiveDay {display: block; width: 100%; text-align: center; background-color: #09143A; padding-bottom: 30px;}
+#fiveDay h2 {font-family: 'Alegreya SC', Times, serif; padding-top: 15px; color:#FCFAF9}
 #fiveDay table {
     margin-left: auto;
     margin-right: auto;
@@ -39,4 +82,22 @@ header {height: 200px;}
 }
 #fiveDay table th {
     border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+#contactInfo {
+    border: 3px solid red;
+}
+
+.mapPreston {
+    width: 100%;
+    height: 300px;
+    border: 3px solid red;   
+}
+
+.mapPreston iframe {
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    border: none;
+    margin: 15px;
 }

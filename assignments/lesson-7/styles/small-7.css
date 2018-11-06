@@ -1,9 +1,9 @@
 /*Header Styles*/
 
 header {
-    background-color: #ffe343;
+    background-color: #09143A;
     position: relative;
-    height: 150px;
+    height: 150px;    
 }
 
 #logo {
@@ -22,48 +22,7 @@ header {
     max-height: 180px;
 }
 
-#current {
-    display: none;
-    float: left;
-    margin: 0;
-    margin-top: 15px;
-    margin-left: 2%;
-    width: 30%;
-    height: 80%;
-    background: #ffb443;
-             
-}
-
-#currentImg {
-    float: left;
-    margin: 0;
-    margin-top: 14px;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 30%;
-    height: 75%;
-            
-}
-
-#currentImg img {
-    max-width:100%;
-    max-height: 100%;
-}
-
-#currentConditions {
-    float: left;
-    margin: 0;
-    margin-top: 14px;
-    margin-right: 5%;
-    width: 50%;
-    height: 75%;
-    line-height: .5;
-    color: #7e4f04;
-    font-size: .75em;
-    font-weight: bolder;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    
-}
+#current {display: none;}
 
 #siteTitle {
     float: left;
@@ -74,7 +33,7 @@ header {
 }
 
 #siteTitle h1, h2 {
-    color: #7e4f04;
+    color: #FCFAF9;
     
 }
 
@@ -95,14 +54,14 @@ header {
     position: absolute;
     top: 110px;
     right: 1rem;
-    background-color: #ffb443;
+    background-color: #FCFAF9;
     border: none;
-    color: #7e4f04;
+    color: black;
     text-align: center;
     display: inline-block;
     cursor: pointer;
-    border: 1px solid #7e4f04;
-    font-weight: bold;
+    border: 1px solid black;
+    font-weight: normal;
     font-size: 1.25em;
 }
 
@@ -118,32 +77,35 @@ header {
     padding-right: 0;
     margin: 0;
     width: 100%;
-    background-color: #d9ff43;
+    background-color: #09143A;
     text-align: center;
 }
 
 .responsiveNav li {
     display: block;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .responsiveNav li a {
     display: block;
-    color:#7e4f04;
+    color:#FCFAF9;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 .responsiveNav li a:hover {
-    background-color: #ffa20d;
+    background-color: #48E5C2;
+    color: black;
+    font-weight: bold;
 }
 
 /*Main Area Style*/
+
 main h1 {
     font-family: 'Alegreya SC', Times, serif;
     font-weight: bolder;
-    color:#7e4f04;
+    color:#09143A;
     text-align: center;
     font-size: 2.5em;
 }
@@ -196,20 +158,34 @@ main {
 /*Footer Style*/
 
 footer {
-    background-color: #ffe343;
+    background-color: #09143A;
     position: relative;
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color:#7e4f04;
+    font-weight: normal;
+    color:#FCFAF9;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*Article Style*/
+
+article {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    border: 3px solid red;
+}
+
+article h2 {
+    font-family: 'Alegreya SC', Times, serif;
+    color: #09143A;
+}
+
 /*Map Style*/
+
+
 
 .mapPreston {
     max-width: 100%;
