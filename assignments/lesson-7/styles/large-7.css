@@ -109,8 +109,8 @@ article img {
 .mapPreston iframe {
     float: left;
     width: 65%;
-    height: 450px;
-    border: none;
+    height: 320px;
+    border: 1px solid #09143A;
     margin: 15px;    
 }
 
