@@ -203,6 +203,7 @@ article h2 {
     margin-bottom: 15px;
     background-color: #CDF7EE;
     overflow: auto;
+    text-align: center;
 }
 
 .mapPreston iframe {
