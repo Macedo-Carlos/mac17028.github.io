@@ -122,3 +122,8 @@ article img {
     position: absolute;
     margin-left: 70%
 }
+
+.picturesContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}

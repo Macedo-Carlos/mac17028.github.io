@@ -217,3 +217,37 @@ article h2 {
 .contactDetails {
     clear: both;
 }
+
+/*Styles for galery images*/
+
+.picturesContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 30px;
+}
+
+.polaroid {
+    padding: 10px;
+    width: 250px;
+    border: 1.5px solid rgb(125, 125, 125, .75);
+    text-align: center;
+    cursor: pointer;
+    justify-self: center;
+}
+    
+.pictureLabel {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1em;
+    padding: 25px;
+    }
+    
+.polaroid:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 37.5em) {
+    .picturesContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+  }
