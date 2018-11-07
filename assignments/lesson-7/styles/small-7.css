@@ -1,18 +1,16 @@
 /*Header Styles*/
 
 header {
-    background-color: #09143A;
-    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: #09143A;    
     height: 150px;    
 }
 
 #logo {
-    float: left;
-    margin: 0;
-    margin-left: 2%;
-    width: 25%;
-    height: 100%;
-    
+    width: 20%;
+    height: 70%;
 }
 
 #logo img {
@@ -25,10 +23,9 @@ header {
 #current {display: none;}
 
 #siteTitle {
-    float: left;
     margin: 0;
     text-align: center;
-    width: 65%;
+    width: 70%;
     height: 100%;
 }
 
@@ -50,12 +47,9 @@ header {
 /* Responsive Nav*/
 
 .hamburger {
-    display: block;
-    position: absolute;
-    top: 110px;
-    right: 1rem;
-    background-color: #FCFAF9;
-    border: none;
+    align-self: flex-end;
+    margin: 12px;
+    background-color: #FCFAF9;    
     color: black;
     text-align: center;
     display: inline-block;
@@ -130,7 +124,8 @@ main {
     top: 3px;
     left: 5px;
     background-color: white;
-    opacity: .5;
+    opacity: .65;
+    height: 190px;
 }
 .weatherDetails h3, table {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -204,6 +199,11 @@ article h2 {
     background-color: #CDF7EE;
     overflow: auto;
     text-align: center;
+}
+
+.contactDetails h3 {
+    font-family: 'Alegreya SC', Times, serif;
+    color: #09143A;
 }
 
 .mapPreston iframe {

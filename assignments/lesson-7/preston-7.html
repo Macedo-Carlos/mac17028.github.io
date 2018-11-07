@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/shiny-days-fav.png">
 
 </head>
 
@@ -48,7 +49,7 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -59,9 +60,9 @@
         <section class="heroSection">
             <div class="heroImage">
                 <picture class="heroImage">
-                <source media="(min-width: 860px)" srcset="images/franklin-large.jpg">
-                <source media="(max-width: 859px)" srcset="images/franklin-small.jpg">
-                <img src="images/franklin-small.jpg" alt="Hero Image" style="width: 100%;"/>
+                <source media="(min-width: 860px)" srcset="images/neighborhood-rainbow2.jpg">
+                <source media="(max-width: 859px)" srcset="images/path-woods1.jpg">
+                <img src="images/path-woods1.jpg" alt="Hero Image" style="width: 100%;"/>
                 </picture>
             </div>
             
@@ -87,7 +88,7 @@
                     <tr>
                         <td>Wind Speed:</td>
                         <td>5 mph</td>
-                    </tr>
+                    </tr>                    
                 </table>
             </div>
 
@@ -100,7 +101,7 @@
                         </tr>
                         <tr>
                             <td>Temperature:</td>
-                            <td>76 &deg;F</td>
+                            <td><span id="temperatureInput">76</span> &deg;F</td>
                         </tr>
                         <tr>
                             <td>Humidity:</td>
@@ -112,7 +113,11 @@
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td>5 mph</td>
+                            <td><span id="windSpeedInput">5</span> mph</td>
+                        </tr>
+                        <tr>
+                            <td>Windchill:</td>
+                            <td id="resultElement"></td>
                         </tr>
                     </table>
                 </div>         
@@ -146,7 +151,7 @@
         </section>
 
         <article>
-            <h2>Article</h2>
+            <h2>Interesting Window Display</h2>
             <div class="articleImageBox">
                 <picture class="articleImage">
                 <source media="(min-width: 860px)" srcset="images/gallery-window.jpg">
@@ -161,9 +166,9 @@
         <section id="contactInfo">
             <div class="contactDetails">
                     <h3>Contact Info</h3>
-                    <p>Phone <a href="#">208-123-4567</a></p>
-                    <p>Email <a href="#">contact@shinydays.org</a></p>
-                    <p>Fax <a href="#">208-321-7654</a></p>
+                    <p>Phone: <a href="#">208-123-4567</a></p>
+                    <p>Email: <a href="#">contact@shinydays.org</a></p>
+                    <p>Fax: <a href="#">208-321-7654</a></p>
                     <p>Follow us on <a href="#">Facebook</a></p>
                     <p>Follow us on <a href="#">Twiter</a></p>
                     <p>Follow us on <a href="#">Instagram</a></p>
@@ -188,6 +193,8 @@
 <script src="scripts/currentdate.js"></script>
 
 <script src="scripts/hamburger.js"></script>
+
+<script src="scripts/windchill.js"></script>
 
 </body>
 

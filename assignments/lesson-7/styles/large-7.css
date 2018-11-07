@@ -2,19 +2,19 @@
 
 #siteTitle {width: 40%;}
 
-#logo {margin-left: 10%; width: 15%;}
+#logo {width: 15%;}
 #siteTitle h1 {font-size: 4em; font-weight: bold; line-height: .5;}
 #siteTitle h2 {font-size: 1.5em;}
-header {height: 200px;}
-.hamburger { display: none;	}
+header {height: 200px; justify-content: center;}
+.hamburger { display: none;}
 
 #current {
-    display: block;
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     margin: 0;
-    margin-top: 15px;
-    margin-left: 2%;
     width: 30%;
+    max-width: 280px;
     height: 80%;
     background: #48E5C2;
     border-radius: 15px;
@@ -58,6 +58,9 @@ nav {
 }
 
 .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style-type: none;
     padding: 15px;
     padding-left: 0;
@@ -104,6 +107,7 @@ article img {
     clear: both;
     padding-top: 15px;
     position: relative;
+    text-align: left;
 }
 
 .mapPreston iframe {
