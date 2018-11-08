@@ -61,35 +61,42 @@
         <section class="picturesContainer">
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image1.jpg" alt="Water going down the river" style="width:100%">
+                        <img src="images/gallery-image1.jpg" alt="Water going down the river" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">Water going down the river</figcaption>
                 </figure>
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image2.jpg" alt="Cludy day across the bridge" style="width:100%">
+                        <img src="images/gallery-image2.jpg" alt="Cludy day across the bridge" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">Cludy day across the bridge</figcaption>
                 </figure>
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image3.jpg" alt="Sky ready for hot air balloons" style="width:100%">
+                        <img src="images/gallery-image3.jpg" alt="Sky ready for hot air balloons" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">Sky ready for hot air balloons</figcaption>
                 </figure>
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image4.jpg" alt="A few clouds in the distance, not too bad" style="width:100%">
+                        <img src="images/gallery-image4.jpg" alt="A few clouds in the distance, not too bad" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">A few clouds in the distance, not too bad</figcaption>
                 </figure>
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image5.jpg" alt="Perfect weather for ducks night out" style="width:100%">
+                        <img src="images/gallery-image5.jpg" alt="Perfect weather for ducks night out" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">Perfect weather for ducks night out</figcaption>
                 </figure>
 
                 <figure class="polaroid">
-                        <img src="images/gallery-image6.jpg" alt="Misty morning, one spider loving it" style="width:100%">
+                        <img src="images/gallery-image6.jpg" alt="Misty morning, one spider loving it" style="width:100%" onclick="modalOnClick(this)">
                         <figcaption class="pictureLabel">Misty morning, one spider loving it</figcaption>
                 </figure>
                 
+                <!-- The Modal -->
+                <div id="modal01" class="modal" onclick="this.style.display='none'">
+                    <span class="modal-close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="modal-caption"></div>
+                </div>
+
         </section>
                 
     </main>
@@ -107,6 +114,8 @@
 <script src="scripts/hamburger.js"></script>
 
 <script src="scripts/windchill.js"></script>
+
+<script src="scripts/modal-images.js"></script>
 
 </body>
 
