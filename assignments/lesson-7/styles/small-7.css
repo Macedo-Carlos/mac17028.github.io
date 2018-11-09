@@ -240,13 +240,6 @@ article h2 {
     padding: 25px;
     }
 
-@media screen and (min-width: 37.5em) {
-    .picturesContainer {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
