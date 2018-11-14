@@ -61,10 +61,10 @@
         <form method="GET" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="name" title="At least five letters name." pattern="[A-Za-z].{5,}" required></label>
+                <label class="top req">Full Name* <input type="text" name="name" title="At least five letters name" pattern="[A-Za-z].{5,}" required></label>
                 <label class="top">Email Address <input type="email"name="email" placeholder="someone@email.com"></label>
-                <label class="top">Phone Number* <input type="tel"name="phone" required></label>
-                <label class="top">Zip Code* <input type="number"name="zip" required></label>
+                <label class="top req">Phone Number* <input type="tel"name="phone" title="Provide a phone number" required></label>
+                <label class="top req">Zip Code* <input type="number"name="zip" title="Provide a zip code number" required></label>
             </fieldset>
             <fieldset>
                 <legend>Report</legend>
@@ -79,14 +79,13 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
-                <label class="top">Rate storm severity from 1 to 10
+                <label class="top range">Rate storm severity from 1 to 10</label>
                     <input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">1</span>
-                </label>
-                
+                    <span id="ratingvalue" class="range">1</span>
+                                
                 <label class="top">Storm Region
                     <select name="region">
-                        <option value="" selected="true" disabled>--Select Region--</option>
+                        <option value="" selected="true" disabled>--Select Region-- <span class="arrow">&#9662;</span></option>
                         <option value="preston">Preston</option>
                         <option value="sodaSprings">Soda Sprongs</option>
                         <option value="fishHaven">Fish Haven</option>
@@ -96,12 +95,12 @@
                 </label> 
 
                 <div>User In-Danger Level</div>
-                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
-                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
                 
                 <label class="top">Additional information or comments:</label>
-                <textarea name="message" rows="10" cols="30"></textarea>
+                <textarea name="message" rows="5" cols="30"></textarea>
                 
             </fieldset>
             <input type="submit" value="Send Weather Report" class="submitBtn">

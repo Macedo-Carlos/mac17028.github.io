@@ -77,8 +77,8 @@ main h1 {
     font-size: 5em;
 }
 
-.weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 190px;}
-.weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 190px;}
+.weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}
+.weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}
 
 #fiveDay {display: block; width: 100%; text-align: center; background-color: #09143A; padding-bottom: 30px;}
 #fiveDay h2 {font-family: 'Alegreya SC', Times, serif; padding-top: 15px; color:#FCFAF9}
@@ -130,4 +130,8 @@ article img {
 
 .polaroid:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+form label.sbs {
+    padding: .4rem 0;
 }
