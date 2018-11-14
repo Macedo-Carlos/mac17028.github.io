@@ -390,3 +390,12 @@ form input.submitBtn {
 form label.req {
     color: rgb(206, 1, 1);
 }
+
+.rangeValue {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: #09143A;
+    color: white;
+    padding: 0 4px 2px 4px;
+    text-align: center;
+}
