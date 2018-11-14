@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shiny Days (Gallery)</title>
+    <meta name="description" content="Shiny Days provides useful weather information for the cities of Preston, Soda Springs and Fish Haven">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 37.5em" href="styles/medium-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 64em)" href="styles/large-view.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/shiny-days-fav.png">
+
+</head>
+
+<body>
+
+<div>
+    <header>
+        <div id="logo"><img src="images/shiny-days-logo.png" alt="Shiny Days Logo"/></div>
+        
+        <div id="siteTitle">
+            <h1>Shiny Days</h1>
+            <h2>"Reliable Weather Information"</h2>
+        </div>
+        
+        <div id="current">
+            <div id="currentImg">
+            <img src="images/current-conditions.png" alt="Current Contitions"/>
+            </div>
+            <div id="currentConditions">
+                <p>Temperature: 73 &#176;F</p>
+                <p>Precipitation: 0%</p>
+                <p>Humidity: 25%</p>
+                <p>Wind: 6 mph</p>
+            </div>
+        </div>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Storm Center</h1>
+        <p>Please fill the form below if you would like to report a storm or an unusual weather event in your travel area. Please note, * denotes a required field.</p>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" title="At least five letters name." pattern="[A-Za-z].{5,}" required></label>
+                <label class="top">Email Address <input type="email"name="email" placeholder="someone@email.com"></label>
+                <label class="top">Phone Number* <input type="tel"name="phone" required></label>
+                <label class="top">Zip Code* <input type="number"name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Report</legend>
+                <label class=top>Date <input type="date" name="stormDate"></label>
+                <label class="top">Storm Type
+                    <input list="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label class="top">Rate storm severity from 1 to 10
+                    <input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">1</span>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="" selected="true" disabled>--Select Region--</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Sprongs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="dragons">Here be Dragons</option>
+                        <option value="lions">Here be Lions</option>
+                </label>                
+
+                <div>User In-Danger Level</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+                
+                <label class="top">Additional information or comments:</label>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                
+            </fieldset>
+            <input type="submit" value="Send Weather Report" class="submitBtn">
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2018&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Shiny Days Weather Reports&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span></p>
+    </footer>
+
+</div>
+
+<script src="scripts/currentdate.js"></script>
+
+<script src="scripts/hamburger.js"></script>
+
+<script src="scripts/windchill.js"></script>
+
+<script src="scripts/rating-adjust.js"></script>
+
+</body>
+
+</html>
