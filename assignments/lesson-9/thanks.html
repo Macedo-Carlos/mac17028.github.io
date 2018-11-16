@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shiny Days (Gallery)</title>
+    <meta name="description" content="Shiny Days provides useful weather information for the cities of Preston, Soda Springs and Fish Haven">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 37.5em)" href="styles/medium-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 64em)" href="styles/large-view.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/shiny-days-fav.png">
+
+</head>
+
+<body>
+
+<div>
+    <header>
+        <div id="logo"><img src="images/shiny-days-logo.png" alt="Shiny Days Logo"/></div>
+        
+        <div id="siteTitle">
+            <h1>Shiny Days</h1>
+            <h2>"Reliable Weather Information"</h2>
+        </div>
+        
+        <div id="current">
+            <div id="currentImg">
+            <img src="images/current-conditions.png" alt="Current Contitions"/>
+            </div>
+            <div id="currentConditions">
+                <p>Temperature: 73 &#176;F</p>
+                <p>Precipitation: 0%</p>
+                <p>Humidity: 25%</p>
+                <p>Wind: 6 mph</p>
+            </div>
+        </div>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Thank You!</h1>
+        <div class="tyMessage">
+        <p class="thankstxt">For sending us this important weather information thus helping us acomplish our commitment in keeping everyone alert, well informed and safe.</p>
+        <p class="thankstxt">You may continue exploring our site.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2018&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Shiny Days Weather Reports&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span></p>
+    </footer>
+
+</div>
+
+<script src="scripts/currentdate.js"></script>
+
+<script src="scripts/hamburger.js"></script>
+
+<script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

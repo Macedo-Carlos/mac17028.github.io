@@ -1,0 +1,58 @@
+/* || general styles */
+
+html {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #FFFF99;
+  }
+  
+  h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #1e90ff;
+  }
+
+  h2 {
+    font-family: 'Audiowide', cursive;
+    color: #1e90ff;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  header p {
+    font-size: 2rem;    
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: #1e90ff;
+  }
+  
+  /* section styles */
+  
+  section article {
+    width: 33%;
+    float: left;
+  }
+  
+  section p {
+    margin: 5px 0;
+    color: #252525;
+  }
+  
+  section ul {
+    margin-top: 0;
+    color: #252525;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+  }
