@@ -70,12 +70,28 @@ nav {
     text-align: center;    
 }
 .navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: normal;}
-.navigation li a {display: inline; color:#FCFAF9; padding: 8px 16px; text-decoration: none;}
+.navigation li a {display: inline; color:#FCFAF9; padding: 8px 16px;}
 .navigation li a:hover {text-decoration: underline; background-color: #09143A; color: #FCFAF9;}
+
+.currentPage {
+    background-color: #09143A;
+    color:#FCFAF9;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.notCurrentPage {
+    background-color: #09143A;
+    color:#FCFAF9;
+    font-weight: normal;
+    text-decoration: none;
+}
 
 main h1 {
     font-size: 5em;
 }
+
+.townDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 275px;}
 
 .weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}
 .weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}

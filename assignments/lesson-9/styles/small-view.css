@@ -83,8 +83,7 @@ header {
 }
 
 .responsiveNav li a {
-    display: block;
-    color:#FCFAF9;
+    display: block;    
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -94,6 +93,18 @@ header {
     color: black;
     font-weight: bold;
 }
+
+.currentPage {
+    background-color: #CDF7EE;
+    color: black;
+    font-weight: bold;
+}
+
+.notCurrentPage {
+    color:#FCFAF9;
+}
+
+
 
 /*Main Area Style*/
 
@@ -132,6 +143,23 @@ p {
     position: relative;
 }
 
+.heroImage {
+    padding-bottom: 10px; 
+}
+
+.townDetails {
+    position: absolute;    
+    padding-top: 0;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    opacity: .75;
+    height: auto;
+}
+.townDetails h3, table {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;    
+}
+
 .weatherDetails {
     position: absolute;
     padding: .5em;
@@ -139,12 +167,11 @@ p {
     top: 3px;
     left: 5px;
     background-color: white;
-    opacity: .65;
+    opacity: .75;
     height: 200px;
 }
 .weatherDetails h3, table {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;    
 }
 
 .weatherDetails2 {
@@ -398,5 +425,10 @@ form label.req {
     background-color: #09143A;
     color: white;
     padding: 0 4px 2px 4px;
+    text-align: center;
+}
+
+.welcomeMessage{
+    color: #09143A;
     text-align: center;
 }
