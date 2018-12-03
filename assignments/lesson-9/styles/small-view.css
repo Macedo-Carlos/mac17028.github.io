@@ -432,3 +432,8 @@ form label.req {
     color: #09143A;
     text-align: center;
 }
+
+.townCard {
+    color: black;
+    text-decoration: none;
+}

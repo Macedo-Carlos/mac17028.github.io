@@ -69,23 +69,23 @@
                 <table>
                     <tr>
                         <td>Currently:</td>
-                        <td class="currentCurrently"></td>
+                        <td><strong><span class="currentCurrently"></span></strong></td>
                     </tr>
                     <tr>
                         <td>Temperature:</td>
-                        <td><span id="temperatureInput" class="currenTemp2"></span> &deg;F</td>
+                        <td><strong><span class="currenTemp2"></span> &deg;F</strong></td>
                     </tr>
                     <tr>
                         <td>Humidity:</td>
-                        <td><span class="currentHumidity2"></span>&percnt;</td>
+                        <td><strong><span class="currentHumidity2"></span>&percnt;</strong></td>
                     </tr>
                     <tr>
                         <td>Wind Speed:</td>
-                        <td><span id="windSpeedInput" class="currentWind2"></span>&nbsp;mph</td>
+                        <td><strong><span class="currentWind2"></span>&nbsp;mph</strong></td>
                     </tr>
                     <tr>
                         <td>Windchill:</td>
-                        <td id="resultElement"></td>
+                        <td><strong><span id="resultElement"></span> &deg;F</strong></td>
                     </tr>
                 </table>
             </div>         
@@ -98,21 +98,21 @@
               <thead>
                 <tr>
                   <th>Day</th>
-                  <th>Wed</th>
-                  <th>Thu</th>
-                  <th>Fri</th>
-                  <th>Sat</th>
-                  <th>Sun</th>
+                  <th id="forecastDay7">Wed</th>
+                  <th id="forecastDay15">Thu</th>
+                  <th id="forecastDay23">Fri</th>
+                  <th id="forecastDay31">Sat</th>
+                  <th id="forecastDay39">Sun</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th style="border-bottom: none;">Forecast</th>
-                  <td>89&deg;F</td>
-                  <td>87&deg;F</td>
-                  <td>78&deg;F</td>
-                  <td>75&deg;F</td>
-                  <td>72&deg;F</td>
+                  <td><span id="forecastTemp7"></span>&nbsp;&deg;F</td>
+                  <td><span id="forecastTemp15"></span>&nbsp;&deg;F</td>
+                  <td><span id="forecastTemp23"></span>&nbsp;&deg;F</td>
+                  <td><span id="forecastTemp31"></span>&nbsp;&deg;F</td>
+                  <td><span id="forecastTemp39"></span>&nbsp;&deg;F</td>
                 </tr>
               </tbody>
             </table>        
@@ -164,8 +164,6 @@
 <script src="scripts/hamburger.js"></script>
 
 <script src="scripts/weather-preston.js"></script>
-
-<script src="scripts/windchill.js"></script>
 
 </body>
 

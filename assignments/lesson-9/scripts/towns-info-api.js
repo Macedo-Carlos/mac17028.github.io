@@ -17,7 +17,7 @@ function showTownInfo(jsonObj) {
     for(var i = 0; i < townDetails.length; i++) {
         if (townDetails[i].name == "Preston") {
             document.getElementById('townNamePreston').innerHTML = townDetails[i].name;
-            document.getElementById('mottoPreston').innerHTML = townDetails[i].motto;
+            document.getElementById('mottoPreston').innerHTML = '"' + townDetails[i].motto + '"';
             document.getElementById('yearFoundedPreston').innerHTML = townDetails[i].yearFounded;
             document.getElementById('populationPreston').innerHTML = townDetails[i].currentPopulation;
             document.getElementById('averageRainPreston').innerHTML = townDetails[i].averageRainfall + " inches";
@@ -41,7 +41,7 @@ function showTownInfoSoda(jsonObj) {
     for(var i = 0; i < townDetails.length; i++) {
         if (townDetails[i].name == "Soda Springs") {
             document.getElementById('townNameSoda').innerHTML = townDetails[i].name;
-            document.getElementById('mottoSoda').innerHTML = townDetails[i].motto;
+            document.getElementById('mottoSoda').innerHTML = '"' + townDetails[i].motto + '"';
             document.getElementById('yearFoundedSoda').innerHTML = townDetails[i].yearFounded;
             document.getElementById('populationSoda').innerHTML = townDetails[i].currentPopulation;
             document.getElementById('averageRainSoda').innerHTML = townDetails[i].averageRainfall + " inches";
@@ -65,7 +65,7 @@ function showTownInfoFish(jsonObj) {
     for(var i = 0; i < townDetails.length; i++) {
         if (townDetails[i].name == "Fish Haven") {
             document.getElementById('townNameFish').innerHTML = townDetails[i].name;
-            document.getElementById('mottoFish').innerHTML = townDetails[i].motto;
+            document.getElementById('mottoFish').innerHTML = '"' + townDetails[i].motto + '"';
             document.getElementById('yearFoundedFish').innerHTML = townDetails[i].yearFounded;
             document.getElementById('populationFish').innerHTML = townDetails[i].currentPopulation;
             document.getElementById('averageRainFish').innerHTML = townDetails[i].averageRainfall + " inches";
