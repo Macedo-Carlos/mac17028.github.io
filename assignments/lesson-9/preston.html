@@ -28,13 +28,12 @@
         
         <div id="current">
             <div id="currentImg">
-            <img src="images/current-conditions.png" alt="Current Contitions"/>
+            <img src="#" id="currentCurrentlyImg" alt="Current Contitions"/>
             </div>
             <div id="currentConditions">
-                <p>Temperature: 73 &#176;F</p>
-                <p>Precipitation: 0%</p>
-                <p>Humidity: 25%</p>
-                <p>Wind: 6 mph</p>
+                <p>Temperature: <span class="currenTemp"></span> &#176;F</p>
+                <p>Humidity: <span class="currentHumidity"></span>&percnt;</p>
+                <p>Wind: <span class="currentWind"></span>&nbsp;mph</p>
             </div>
         </div>
 
@@ -64,62 +63,32 @@
                 <img src="images/path-woods1.jpg" alt="Hero Image" style="width: 100%;"/>
                 </picture>
             </div>
-            
+
             <div class="weatherDetails">
                 <h3>Weather Summary</h3>
                 <table>
                     <tr>
                         <td>Currently:</td>
-                        <td>Sunny</td>
+                        <td class="currentCurrently"></td>
                     </tr>
                     <tr>
                         <td>Temperature:</td>
-                        <td>76 &deg;F</td>
+                        <td><span id="temperatureInput" class="currenTemp2"></span> &deg;F</td>
                     </tr>
                     <tr>
                         <td>Humidity:</td>
-                        <td>69%</td>
-                    </tr>
-                    <tr>
-                        <td>Precipitation:</td>
-                        <td>0 inches</td>
+                        <td><span class="currentHumidity2"></span>&percnt;</td>
                     </tr>
                     <tr>
                         <td>Wind Speed:</td>
-                        <td>5 mph</td>
-                    </tr>                    
+                        <td><span id="windSpeedInput" class="currentWind2"></span>&nbsp;mph</td>
+                    </tr>
+                    <tr>
+                        <td>Windchill:</td>
+                        <td id="resultElement"></td>
+                    </tr>
                 </table>
-            </div>
-
-            <div class="weatherDetails2">
-                    <h3>Weather Summary</h3>
-                    <table>
-                        <tr>
-                            <td>Currently:</td>
-                            <td>Sunny</td>
-                        </tr>
-                        <tr>
-                            <td>Temperature:</td>
-                            <td><span id="temperatureInput">76</span> &deg;F</td>
-                        </tr>
-                        <tr>
-                            <td>Humidity:</td>
-                            <td>69%</td>
-                        </tr>
-                        <tr>
-                            <td>Precipitation:</td>
-                            <td>0 inches</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Speed:</td>
-                            <td><span id="windSpeedInput">5</span> mph</td>
-                        </tr>
-                        <tr>
-                            <td>Windchill:</td>
-                            <td id="resultElement"></td>
-                        </tr>
-                    </table>
-                </div>         
+            </div>         
         </section>
         
 
@@ -184,7 +153,8 @@
     <footer>
         <p>Copyright &copy;2018&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         Shiny Days Weather Reports&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span></p>
+        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Weather data provided by OpenWeatherMap.org</p>
     </footer>
 
 </div>
@@ -192,6 +162,8 @@
 <script src="scripts/currentdate.js"></script>
 
 <script src="scripts/hamburger.js"></script>
+
+<script src="scripts/weather-preston.js"></script>
 
 <script src="scripts/windchill.js"></script>
 

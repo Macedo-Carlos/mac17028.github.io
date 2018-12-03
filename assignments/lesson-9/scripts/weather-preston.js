@@ -5,8 +5,23 @@ weatherRequest.open('GET', apiURL, true);
 weatherRequest.responseType = "text";
 weatherRequest.send();
 
-weatherRequest.onload =  function () {
-    var weatherData = JSON.parse(weatherRequest.response);
+weatherRequest.onload = function() {
+    var jsonWeatherData = JSON.parse(weatherRequest.response);
+    populateWeatherData(jsonWeatherData);
+}
+
+function populateWeatherData(weatherData) {    
     console.log(weatherData);
-    document.getElementById('currenTemp').innerHTML = weatherData.main.temp;
+    document.querySelector('.currenTemp').innerHTML = weatherData.main.temp;
+    document.querySelector('.currenTemp2').innerHTML = weatherData.main.temp;
+    document.querySelector('.currentHumidity').innerHTML = weatherData.main.humidity;
+    document.querySelector('.currentHumidity2').innerHTML = weatherData.main.humidity;
+    document.querySelector('.currentWind').innerHTML = weatherData.wind.speed;
+    document.querySelector('.currentWind2').innerHTML = weatherData.wind.speed;
+    document.querySelector('.currentCurrently').innerHTML = weatherData.weather[0].main;
+
+    var weatherIconUrl = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+    document.getElementById("currentCurrentlyImg").src = weatherIconUrl;
+
+
 }
