@@ -1,5 +1,5 @@
 var weatherRequest = new XMLHttpRequest();
-var apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ecb60c79e171db217892f089857b991b";
+var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ecb60c79e171db217892f089857b991b";
 
 weatherRequest.open('GET', apiURL, true);
 weatherRequest.responseType = "text";
@@ -21,7 +21,7 @@ function populateWeatherData(weatherData) {
     document.querySelector('.currentWind2').innerHTML = weatherData.wind.speed;
     document.querySelector('.currentCurrently').innerHTML = weatherData.weather[0].main;
 
-    var weatherIconUrl = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+    var weatherIconUrl = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
     document.getElementById("currentCurrentlyImg").src = weatherIconUrl;
 }
 
@@ -33,7 +33,7 @@ function calculateWindChill(weatherData) {
 }
 
 var forecastRequest = new XMLHttpRequest();
-var apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=ecb60c79e171db217892f089857b991b";
+var apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=ecb60c79e171db217892f089857b991b";
 
 forecastRequest.open('GET', apiURL, true);
 forecastRequest.responseType = "text";
@@ -56,13 +56,25 @@ function populateForecastData(forecastData) {
     forecastWeekDay[6] = "Sat";
 
     for (var i = 7; i < 40; i+=8) {
-        var forecastDay = parseFloat(forecastData.list[i].dt) * 1000;
-        var fwd = forecastWeekDay[new Date(forecastDay).getDay()];
-        var forecastDayId = "forecastDay" + i;
-        document.getElementById(forecastDayId).innerHTML = fwd;
+        if (i == 39) {
+            i = 38;
+            var forecastDay = parseFloat(forecastData.list[i].dt) * 1000;
+            var fwd = forecastWeekDay[new Date(forecastDay).getDay()];
+            var forecastDayId = "forecastDay" + i;
+            document.getElementById(forecastDayId).innerHTML = fwd;
 
-        var forcastTemp = forecastData.list[i].main.temp_max;
-        var forecastTempId = "forecastTemp" + i;
-        document.getElementById(forecastTempId).innerHTML = forcastTemp;
+            var forcastTemp = forecastData.list[i].main.temp_max;
+            var forecastTempId = "forecastTemp" + i;
+            document.getElementById(forecastTempId).innerHTML = forcastTemp;
+        } else {
+            var forecastDay = parseFloat(forecastData.list[i].dt) * 1000;
+            var fwd = forecastWeekDay[new Date(forecastDay).getDay()];
+            var forecastDayId = "forecastDay" + i;
+            document.getElementById(forecastDayId).innerHTML = fwd;
+
+            var forcastTemp = forecastData.list[i].main.temp_max;
+            var forecastTempId = "forecastTemp" + i;
+            document.getElementById(forecastTempId).innerHTML = forcastTemp;
+        }
     }
 }
