@@ -1,14 +1,16 @@
+.grid-container {
+    display: grid;
+}
+
 /*Header Styles*/
 
 header {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
     background-color: #09143A;    
     height: 150px;    
 }
 
 #logo {
+    
     width: 20%;
     height: 70%;
 }
@@ -47,7 +49,6 @@ header {
 /* Responsive Nav*/
 
 .hamburger {
-    align-self: flex-end;
     margin: 12px;
     background-color: #FCFAF9;    
     color: black;
@@ -77,13 +78,11 @@ header {
 }
 
 .responsiveNav li {
-    display: block;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
-.responsiveNav li a {
-    display: block;    
+.responsiveNav li a { 
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -257,185 +256,4 @@ article h2 {
 
 .contactDetails {
     clear: both;
-}
-
-/*Styles for galery images*/
-
-.picturesContainer {
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.polaroid {
-    padding: 10px;
-    width: 250px;
-    border: 1.5px solid rgb(125, 125, 125);
-    text-align: center;
-    cursor: pointer;
-    justify-self: center;
-}
-    
-.pictureLabel {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1em;
-    padding: 25px;
-    }
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 80px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,.7); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 500px;
-}
-
-/* Caption of Modal Image */
-#modal-caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 30px;
-    background-color: #09143A;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 1.25em;
-    overflow: auto;
-}
-
-/* Add Animation */
-.modal-content, #modal-caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: .6s;
-    animation-name: zoom;
-    animation-duration: .6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Report Form */
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #09143A;
-    border-radius: 5px;
-    padding: .5rem 2%;
-}
-form legend {
-    color: #09143A;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    font-family: 'Alegreya SC', Times, serif; 
-}
-form label.top, form div {
-    display: block;
-    padding-top: 1.25rem;
-    color: #2e2e2e;
-    font-size: .8rem;
-    font-weight: bold;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-}
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 16px;
-    border: 1px solid #09143A;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width:90%;
-    max-width: 20rem;
-    background-color: rgba(205, 247, 238, 0.75);    
-}
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif; 
-}
-form input.submitBtn {
-    border: none;
-    background-color: #09143A;
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 96%;
-    max-width: 20rem;
-    font-family: 'Alegreya SC', Times, serif;
-}
-.arrow {
-    width: 100%;
-    text-align: left;
-}
-fieldset label.range{
-    margin-bottom: 10px;
-    font-size: .9em;
-}
-form label.req {
-    color: rgb(206, 1, 1);
-}
-
-.rangeValue {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    background-color: #09143A;
-    color: white;
-    padding: 0 4px 2px 4px;
-    text-align: center;
-}
-
-
-
-.welcomeMessage{
-    color: #09143A;
-    text-align: center;
-}
-
-.townCard {
-    color: black;
-    text-decoration: none;
 }
