@@ -11,7 +11,7 @@ weatherRequest.onload = function() {
     calculateWindChill(jsonWeatherData);
 }
 
-function populateWeatherData(weatherData) {    
+function populateWeatherData(weatherData) {
     console.log(weatherData);
     document.querySelector('.currenTemp').innerHTML = weatherData.main.temp;
     document.querySelector('.currenTemp2').innerHTML = weatherData.main.temp;
@@ -57,7 +57,7 @@ function populateForecastData(forecastData) {
 
     for (var i = 7; i < 40; i+=8) {
         if (i == 39) {
-            i = 38;
+            i = 36;
             var forecastDay = parseFloat(forecastData.list[i].dt) * 1000;
             var fwd = forecastWeekDay[new Date(forecastDay).getDay()];
             var forecastDayId = "forecastDay" + i;
