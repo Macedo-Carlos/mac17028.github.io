@@ -1,0 +1,153 @@
+/*Large Screen Styles*/
+
+#siteTitle {width: 40%;}
+
+#logo {width: 10%;}
+#siteTitle h1 {font-size: 4em; font-weight: bold; line-height: .5;}
+#siteTitle h2 {font-size: 1.5em;}
+header {height: 200px; justify-content: center;}
+.hamburger { display: none;}
+
+#current {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0;
+    width: 30%;
+    max-width: 275px;
+    height: 65%;
+    background: #CDF7EE;
+    border-radius: 15px;
+}
+
+#currentImg {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50px;
+    height: 75%;
+            
+}
+
+#currentImg img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+#currentConditions {
+    float: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 5%;
+    width: 70%;
+    height: 75%;
+    line-height: .5;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0; width: 100%;
+    background-color: #09143A;
+    text-align: center;    
+}
+.navigation li {display: inline; font-family: 'Raleway', Arial, Helvetica, sans-serif; font-weight: normal;}
+.navigation li a {display: inline; color:#FCFAF9; padding: 8px 16px;}
+.navigation li a:hover {text-decoration: underline; background-color: #09143A; color: #FCFAF9;}
+
+.currentPage {
+    background-color: #09143A;
+    color:#FCFAF9;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.notCurrentPage {
+    background-color: #09143A;
+    color:#FCFAF9;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+main h1 {
+    font-size: 5em;
+}
+
+.townDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 275px;}
+
+.weatherDetails {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}
+.weatherDetails2 {padding: 1em; padding-top: 0; top: 16px; left: 20px; height: 200px;}
+
+#fiveDay {display: block; width: 100%; text-align: center; background-color: #09143A; padding-bottom: 30px;}
+#fiveDay h2 {font-family: 'Alegreya SC', Times, serif; padding-top: 15px; color:#FCFAF9}
+#fiveDay table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    min-width: 600px;
+    border: 1px solid rgb(156, 156, 156);
+}
+#fiveDay table th {
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+article img {
+    float: right;
+    width: 40%;
+    max-width: 420px;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#contactInfo {
+    clear: both;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.mapPreston iframe {
+    float: left;
+    width: 65%;
+    height: 320px;
+    border: 1px solid #09143A;
+    margin: 15px;    
+}
+
+.contactDetails {
+    position: absolute;
+    margin-left: 70%
+}
+
+.picturesContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.polaroid:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+form label.sbs {
+    padding: .4rem 0;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shiny Days (Preston)</title>
+    <meta name="description" content="Shiny Days provides useful weather information for the cities of Preston, Soda Springs and Fish Haven">
+    <link rel="stylesheet" href="styles/small-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="styles/large-view.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/shiny-days-fav.png">
+
+</head>
+
+<body>
+
+<div>
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/shiny-days-logo.png" alt="Shiny Days Logo"/></a></div>
+        
+        <div id="siteTitle">
+            <h1>Shiny Days</h1>
+            <h2>"Reliable Weather Information"</h2>
+        </div>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="currentPage">Home</a></li>
+            <li><a href="preston.html" class="notCurrentPage">Preston</a></li>
+            <li><a href="#" class="notCurrentPage">Soda Springs</a></li>
+            <li><a href="#" class="notCurrentPage">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="notCurrentPage">Storm Center</a></li>
+            <li><a href="gallery.html" class="notCurrentPage">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Welcome</h1>
+
+        <h2 class="welcomeMessage">to Shiny Days, where you can find information relevant to your comunity</h2>
+
+        <a href="preston.html" class="townCard">
+        <section class="heroSection">
+            <div class="heroImage">
+                <picture class="heroImage">
+                <source media="(min-width: 860px)" srcset="images/city-large.jpg">
+                <source media="(max-width: 859px)" srcset="images/city-small.jpg">
+                <img src="images/city-small.jpg" alt="Hero Image" style="width: 100%;"/>
+                </picture>
+            </div>
+            
+            <div class="townDetails">
+                <h3 id="townNamePreston"></h3>
+                <h4><span id="mottoPreston">Moto</span></h4>
+                <table>
+                    <tr>
+                        <td>Year founded: </td>
+                        <td><span id="yearFoundedPreston"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Population: </td>
+                        <td><span id="populationPreston"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Average rain fall: &nbsp;</td>
+                        <td><span id="averageRainPreston"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Events:</td>
+                        <td id="eventListPreston"></td>
+                    </tr>
+                </table>
+            </div>                     
+        </section>
+        </a>
+
+        <a href="#" class="townCard">
+        <section class="heroSection">
+            <div class="heroImage">
+                <picture class="heroImage">
+                <source media="(min-width: 860px)" srcset="images/forest-large.jpg">
+                <source media="(max-width: 859px)" srcset="images/forest-small.jpg">
+                <img src="images/forest-small.jpg" alt="Hero Image" style="width: 100%;"/>
+                </picture>
+            </div>
+            
+            <div class="townDetails">
+                <h3 id="townNameSoda"></h3>
+                <h4><span id="mottoSoda"></span></h4>
+                <table>
+                    <tr>
+                        <td>Year founded:</td>
+                        <td><span id="yearFoundedSoda"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td><span id="populationSoda"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Average rain fall:</td>
+                        <td><span id="averageRainSoda"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Events:</td>
+                        <td id="eventListSoda"></td>
+                    </tr>                                       
+                </table>
+            </div>                     
+        </section>
+        </a>
+
+        <a href="#" class="townCard">
+        <section class="heroSection">
+            <div class="heroImage">
+                <picture class="heroImage">
+                <source media="(min-width: 860px)" srcset="images/snow-large.jpg">
+                <source media="(max-width: 859px)" srcset="images/snow-small.jpg">
+                <img src="images/snow-small.jpg" alt="Hero Image" style="width: 100%;"/>
+                </picture>
+            </div>
+            
+            <div class="townDetails">
+                <h3 id="townNameFish"></h3>
+                <h4><span id="mottoFish"></span></h4>
+                <table>
+                    <tr>
+                        <td>Year founded:</td>
+                        <td><span id="yearFoundedFish"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td><span id="populationFish"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Average rain fall:</td>
+                        <td><span id="averageRainFish"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Events:</td>
+                        <td id="eventListFish"></td>
+                    </tr>
+                </table>
+            </div>                     
+        </section>
+        </a>        
+
+        <article>
+            <h2>How To Choose The Best Camping Spot</h2>
+            <div class="articleImageBox">
+                <picture class="articleImage">
+                <source media="(min-width: 860px)" srcset="images/camping-spot.jpg">
+                <source media="(max-width: 859px)" srcset="images/camping-spot2.jpg">
+                <img src="images/camping-spot.jpg" alt="Galery Image" style="width: 100%;"/>
+                </picture>
+            </div>            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est. Id consectetur purus ut faucibus pulvinar. Sem viverra aliquet eget sit amet tellus cras adipiscing. Diam ut venenatis tellus in. Elit eget gravida cum sociis natoque penatibus et magnis dis. Sit amet massa vitae tortor. Proin fermentum leo vel orci porta. Odio eu feugiat pretium nibh ipsum consequat nisl vel. Ut sem viverra aliquet eget sit amet. Volutpat sed cras ornare arcu dui vivamus arcu. Orci phasellus egestas tellus rutrum.</p>
+            <p>Ultrices gravida dictum fusce ut placerat orci nulla. Enim ut tellus elementum sagittis vitae et leo. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Varius vel pharetra vel turpis nunc eget lorem dolor. Congue quisque egestas diam in. Sagittis eu volutpat odio facilisis mauris. Duis ut diam quam nulla porttitor massa. In vitae turpis massa sed elementum tempus egestas sed. Natoque penatibus et magnis dis parturient montes nascetur ridiculus. Gravida quis blandit turpis cursus. Ac ut consequat semper viverra nam libero. Consequat ac felis donec et odio pellentesque diam volutpat. Ultricies integer quis auctor elit sed vulputate mi sit amet. Commodo elit at imperdiet dui. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Odio eu feugiat pretium nibh.</p>            
+        </article>
+
+        
+        
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2018&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        Shiny Days Weather Reports&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <span id="weekday"></span>,&nbsp;<span id="day"></span>&nbsp;<span id="month"></span>&nbsp;<span id="year"></span></p>
+    </footer>
+
+</div>
+
+<script src="scripts/currentdate.js"></script>
+
+<script src="scripts/hamburger.js"></script>
+
+<script src="scripts/towns-info-api.js"></script>
+
+</body>
+
+</html>
