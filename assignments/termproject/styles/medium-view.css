@@ -1,0 +1,130 @@
+/* Header */
+:root {
+    --darkblue: #003366;
+    --mediumblue: #01b6d1;
+    --lightblue: #beecf3;
+    --yellowg: #ffdf00;
+    --goldm: #d4af37;
+    --shadow: 0 4px 12px rgba(104, 104, 104, 0.8);
+    --shadowGold: 0 4px 12px rgba(212, 175,55, 0.8);
+    --paragraphText: 'Marcellus', 'Poly', 'Libre Baskerville', serif;
+    --titleText: 'Source Sans Pro', 'Open Sans', sans-serif;
+}
+
+.logo {
+    margin: 15px 0px;
+}
+
+nav {
+    grid-area: menua;
+    grid-column-start: 3;
+}
+
+.noMainNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    border-bottom: none;
+}
+
+nav li:hover {
+    background-color: var(--lightblue);
+}
+
+nav ul {
+    flex-direction: row;
+    border-top: none;
+}
+
+nav a {
+    padding: 5px 15px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.activePage {
+    background: none;
+}
+
+.activeLink {
+    color: white;
+    text-decoration: underline;
+}
+
+header {
+    grid-template-columns: 50px 100px auto 50px; 
+    grid-template-areas: 
+    '1fr logo hotelName'
+    '1fr menua menua';        
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Showbox section */
+
+.topContainer {
+    grid-template-areas: 
+    'showcase showcase'
+    'topBoxA topBoxB';
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.showcase {
+    height: 400px;
+    background: url(/assignments/termproject/images/temples/salt-lake/show-case-medium.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.showcaseBox {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    margin: 20px;
+}
+
+.showcaseBox h2 {
+    font-family: var(--titleText);
+    color: var(--goldm);
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    font-size: 1.75rem;
+}
+
+.showcaseBox p {
+    color: white;
+}
+
+.showcaseBox .btn:hover {
+    box-shadow: var(--shadowGold);
+}
+
+.showcaseImage {
+    display: none;
+}
+
+.topBox {
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.topBox .btn:hover {
+    box-shadow: var(--shadow);
+}
+
+/* Summary section */
+
+.textBox h2 {
+    font-size: 1.75rem;
+}

@@ -1,0 +1,48 @@
+:root {
+    --darkblue: #003366;
+    --mediumblue: #01b6d1;
+    --lightblue: #beecf3;
+    --yellowg: #ffdf00;
+    --goldm: #d4af37;
+    --shadow: 0 2px 8px rgba(104, 104, 104, 0.8);
+    --paragraphText: 'Marcellus', 'Poly', 'Libre Baskerville', serif;
+    --titleText: 'Source Sans Pro', 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background: var(--darkblue);
+    display: grid;
+    grid-template-columns: .5fr 1fr 2.5fr 3fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    '1fr logo hotelName menua';
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    width: 70px;
+}
+
+.hotelName {
+    grid-area: hotelName;
+    font-family: var(--titleText);
+    color: white;
+}
+
+.hamburgerDiv{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav{
+    grid-area: menua;
+}

@@ -1,0 +1,257 @@
+/* CSS Variables */
+:root {
+    --darkblue: #003366;
+    --mediumblue: #01b6d1;
+    --lightblue: #beecf3;
+    --yellowg: #ffdf00;
+    --goldm: #d4af37;
+    --shadow: 0 4px 12px rgba(104, 104, 104, 0.8);
+    --paragraphText: 'Marcellus', 'Poly', 'Libre Baskerville', serif;
+    --titleText: 'Source Sans Pro', 'Open Sans', sans-serif;
+}
+
+.topGridContainer {
+    display: grid;
+    font-family: 'Marcellus', 'Poly', 'Libre Baskerville', serif;
+}
+
+.btn {
+    background: var(--yellowg);
+    color: var(--darkblue);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    font-family: var(--titleText);
+    font-size: 1.125rem;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-areas:
+    'logo'
+    'hotelName'
+    'navButton';
+    background-color: var(--darkblue);
+    color: white;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    width: 70px;
+    margin-top: 20px;    
+}
+
+.hotelName {
+    grid-area: hotelName;
+    font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.hamburger {
+    grid-area: navButton;
+    background-color: var(--goldm);
+    color: var(--darkblue);
+    font-size: 1.125rem;
+    border: 0;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.hamburgerDiv {
+    padding-bottom: 10px;
+}
+
+.noMainNav {
+    display: none;
+}
+
+nav {
+    background: var(--darkblue);
+    list-style-type: none;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    border-top: 1px solid var(--mediumblue);
+    margin: 0px;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    padding: 5px 0px;
+    font-family: 'Marcellus', 'Poly', 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    border-bottom: 1px solid var(--mediumblue);
+}
+
+.activePage {
+    background: var(--lightblue);
+}
+
+.activeLink {
+    color: black;
+}
+
+/* Top container items */
+
+.topContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcase'
+    'showcaseImage'
+    'topBoxA'
+    'topBoxB';
+    padding: 0px 15px 15px 15px;
+}
+
+.showcase {
+    grid-area: showcase;
+}
+
+.showcaseBox {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.showcaseBox h2 {
+    font-family: var(--titleText);
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.showcaseBox p {
+    font-family: var(--paragraphText);
+}
+
+.showcaseImage {
+    grid-area: showcaseImage;
+    width: 100%;
+}
+
+.topBox {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.topBox h4 {
+    font-family: var(--titleText);
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.topBox p{
+    font-family: var(--paragraphText);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.topBox .btn {
+    width: 85%;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.topBoxA {
+    grid-area: topBoxA;
+}
+
+.topBoxB {
+    grid-area: topBoxB;
+}
+
+/* Summary section */
+.summaryContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'textBox'
+    'kirtlandTemple';
+    padding: 0px 15px 15px 15px;
+    background: rgba(204, 204, 204, 0.4);
+    margin:20px 15px;;
+}
+
+.textBox {
+    grid-area: textBox;
+}
+
+.textBox h2 {
+    font-family: var(--titleText);
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.textBox p {
+    font-family: var(--paragraphText);
+}
+
+.kirtlandTemple {
+    grid-area: kirtlandTemple;
+}
+
+footer {
+    background: var(--darkblue);
+    color: white;
+    font-family: var(--paragraphText);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Page Under Construction */
+
+.singleContainer {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+.bigLetters {
+    font-family: var(--titleText);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.singleBtn {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-bottom: 50px;
+}

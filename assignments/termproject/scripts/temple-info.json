@@ -1,0 +1,73 @@
+{
+    "temples" : [{
+        "name": "Salt Lake Temple",
+        "address" : "50 W North Temple St, Salt Lake City UT 84150-9709, United States",
+        "phone" : "(1) 801-240-2640",
+        "services" : [
+            "Clothing rental",
+            "Cafeteria",
+            "Distribution center nearby"
+        ],
+        "schedule" : [
+            "Monday - Closed",
+            "Tuesday - 6am to 9pm",
+            "Wednesday - 6am to 9pm",
+            "Thursday - 6am to 9pm",
+            "Friday - 6am to 9pm",
+            "Saturday - 6am to 9pm",
+            "Sunday - Closed"
+        ]
+        },
+        {
+        "name": "Draper Utah Temple",
+        "address" : "14065 Canyon Vista Ln, Draper UT 84020-5626, United States",
+        "phone" : "(1) 801-576-4240",
+        "services" : [
+            "Distribution center nearby"
+        ],
+        "schedule" : [
+            "Monday - Closed",
+            "Tuesday - 6am to 9pm",
+            "Wednesday - 6am to 9pm",
+            "Thursday - 6am to 9pm",
+            "Friday - 6am to 9pm",
+            "Saturday - 6am to 9pm",
+            "Sunday - Closed"
+        ]
+        },
+        {
+        "name": "Oquirrh Mountain Utah Temple",
+        "address" : "11022 S 4000 W, South Jordan UT 84009-5797, United States",
+        "phone" : "(1) 801-878-3800",
+        "services" : [
+            "Distribution center nearby"
+        ],
+        "schedule" : [
+            "Monday - Closed",
+            "Tuesday - 6am to 9pm",
+            "Wednesday - 6am to 9pm",
+            "Thursday - 6am to 9pm",
+            "Friday - 6am to 9pm",
+            "Saturday - 6am to 9pm",
+            "Sunday - Closed"
+        ]
+        },
+        {
+        "name": "Jordan River Utah Temple",
+        "address" : "10200 S Temple Drive, South Jordan UT 84095-8814, United States",
+        "phone" : "(1) 801-254-3003",
+        "services" : [
+            "Clothing rental",
+            "Cafeteria"
+        ],
+        "schedule" : [
+            "Monday - Closed",
+            "Tuesday - 6am to 9pm",
+            "Wednesday - 6am to 9pm",
+            "Thursday - 6am to 9pm",
+            "Friday - 6am to 9pm",
+            "Saturday - 6am to 9pm",
+            "Sunday - Closed"
+        ]
+    }]
+}
