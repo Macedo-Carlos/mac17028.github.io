@@ -16,6 +16,12 @@
             "Friday - 6am to 9pm",
             "Saturday - 6am to 9pm",
             "Sunday - Closed"
+        ],
+        "closure" : [
+            "Tuesday, December 25, 2018",
+            "Saturday, December 29, 2018",
+            "Tuesday, January 1, 2019 - Monday, January 28, 2019",
+            "Saturday, April 6, 2019"
         ]
         },
         {
@@ -33,6 +39,12 @@
             "Friday - 6am to 9pm",
             "Saturday - 6am to 9pm",
             "Sunday - Closed"
+        ],
+        "closure" : [
+            "Tuesday, December 25, 2018",
+            "Tuesday, January 1, 2019",
+            "Monday, January 28, 2019 - Monday, February 11, 2019",
+            "Saturday, April 6, 2019"
         ]
         },
         {
@@ -50,6 +62,12 @@
             "Friday - 6am to 9pm",
             "Saturday - 6am to 9pm",
             "Sunday - Closed"
+        ],
+        "closure" : [
+            "Tuesday, December 25, 2018",
+            "Tuesday, January 1, 2019",
+            "Monday, March 11, 2019 - Monday, March 25, 2019",
+            "Saturday, April 6, 2019"
         ]
         },
         {
@@ -68,6 +86,12 @@
             "Friday - 6am to 9pm",
             "Saturday - 6am to 9pm",
             "Sunday - Closed"
+        ],
+        "closure" : [
+            "Monday, December 10, 2018 - Monday, December 24, 2018",
+            "Tuesday, December 25, 2018",
+            "Tuesday, January 1, 2019",
+            "Saturday, April 6, 2019"
         ]
     }]
 }

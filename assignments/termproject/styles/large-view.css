@@ -49,3 +49,12 @@ header {
 .topBox .btn {
     width: auto;
 }
+
+/* Temple page */
+.templeTopContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'templeInfo templeImage'
+    'templeLocalWeather templeImage'
+    'scheduleBox closureInfoBox';
+}

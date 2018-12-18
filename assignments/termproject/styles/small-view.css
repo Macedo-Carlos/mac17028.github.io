@@ -255,3 +255,65 @@ footer a{
     align-content: center;
     margin-bottom: 50px;
 }
+
+/* Temple page info */
+#templeName {
+    text-align: center;
+}
+
+.templeTopContainer {
+    display: grid;
+    grid-gap: 15px;
+    margin:20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'templeInfo'
+    'templeImage'
+    'templeLocalWeather'
+    'scheduleBox'
+    'closureInfoBox';
+}
+
+.templeInfo {
+    grid-area: templeInfo;
+}
+
+.infoBox ul {
+    margin: 0px;
+}
+
+.scheduleBox {
+    grid-area: scheduleBox;
+}
+
+.closureInfoBox {
+    grid-area: closureInfoBox;
+}
+
+.templeImage {
+    grid-area: templeImage;
+}
+
+.templeLocalWeather {
+    grid-area: templeLocalWeather;
+}
+
+.infoBox p {
+    margin: 0px;
+}
+
+.infoBox {
+    max-height: 250px;
+    line-height: 1.5;
+}
+
+.infoBox h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.weatherIconBox {
+    display: flex;
+    align-items: center;
+    height: 40px;;
+}

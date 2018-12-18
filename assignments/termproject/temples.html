@@ -54,20 +54,38 @@
    
     <main>
 
+        <h1 id="templeName">Salt Lake Temple</h1>
+
         <section class="templeTopContainer">
-            <div class="templeInfo">
-                <h2 class="templeName">Salt Lake City</h2>
+            <div class="templeInfo infoBox">
+                <h2>Temple Info</h2>
                 <p><strong>Address</strong></p>
                 <p class="templeAddress"></p>
                 <p><strong>Telephone</strong></p>
                 <p class="templeTelephone"></p>
-                <p><strong>Sevices</strong></p>
-                <p class="templeServices"></p>
+                <p><strong>Sevices:</strong></p>
+                <span class="templeServices"></span>
             </div>
-            <div class="templeSchedule"></div>
-            <div class="templeClosure"></div>
-            <div class="templeImage"></div>
-            <div class="templeLocalWeather"></div>
+            <div class="scheduleBox infoBox">
+                <h2>Temple Schedule</h2>
+                <ul class="templeSchedule">                    
+                </ul>
+            </div>
+            <div class="closureInfoBox infoBox">
+                <h2>Closure Dates</h2>
+                <p><span class="closureDates"></span></p>
+            </div>
+            <div class="templeImage">
+                <img src="/assignments/termproject/images/temples/salt-lake/salt-lake-1.jpg" alt="Temple Image">
+            </div>
+            <div class="templeLocalWeather infoBox">
+                <h2>Current Weather Conditions</h2>
+                <div class="weatherIconBox"><img src="#" alt="Current Conditions" class="currentCurrentlyImg"><span class="currentCurrently"></span></div>
+                <p>Temperature: <span class="currentTemp"></span> &deg;F</p>
+                <p>Humidity: <span class="currentHumidity"></span>&percnt;</p>
+                <p>Wind: <span class="currentWind"></span> mph</p>
+                <p></p>
+            </div>
         </section>
         
     </main>
@@ -86,6 +104,8 @@
 </div>
 
 <script src="scripts/toggleHam.js"></script>
+
+<script src="scripts/populate-temple-info.js"></script>
 
 </body>
 
