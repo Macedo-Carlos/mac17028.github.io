@@ -257,13 +257,20 @@ footer a{
 }
 
 /* Temple page info */
-#templeName {
-    text-align: center;
+.subHeader {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.prev:hover, .next:hover {
+    box-shadow: var(--shadow);
+    cursor: pointer;
 }
 
 .templeTopContainer {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 20px;
     margin:20px;
     grid-template-columns: 1fr;
     grid-template-areas: 
