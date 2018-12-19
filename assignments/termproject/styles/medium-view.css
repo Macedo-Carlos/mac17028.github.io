@@ -130,6 +130,10 @@ header {
 }
 
 /* Temple page */
+.subHeader h2 {
+    font-size: 2.5rem;
+}
+
 .templeTopContainer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
