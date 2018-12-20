@@ -54,6 +54,62 @@
    
     
     <main>
+
+        <section class="subHeader">
+            <h2 id="templeName">Reservations</h2>
+            <p>In order to make a reservation please fill the form below if you would like to report a storm or an unusual weather event in your travel area. Please note, * denotes a required field.</p>         
+        </section>
+
+        <div class="formArea">
+
+        <form method="GET" action="confirmation.html">
+            <fieldset>
+                <legend>Destination</legend>
+                <label>Temple Area <select class="nsbs" name="locations" id="tiLocations">
+                    <option value="" selected disabled>--Select Region--</option>
+                    <option value="Salt Lake Temple">Salt Lake Temple</option>
+                    <option value="Draper">Draper Utah Temple</option>
+                    <option value="Oquirrh Mountain Utah Temple">Oquirrh Mountain Utah Temple</option>
+                    <option value="Jordan River Utah Temple">Jordan River Utah Temple</option>
+                </select>
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="req">Full Name* <input class="nsbs" type="text" name="name" title="At least five letters name" pattern="[A-Za-z].{5,}" required></label>
+                <label class="req">Email Address* <input class="nsbs" type="email" name="email" placeholder="someone@email.com" required></label>
+                <label class="req">Phone Number* <input class="nsbs" type="tel" name="phone" title="Provide a phone number" required></label>
+                <label class="req">Zip Code* <input class="nsbs" type="number" name="zip" title="Provide a zip code number" pattern="[0-9]{5}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Service Request</legend>
+                <label>Check-In <input class="nsbs" type="date" name="checkin"></label>
+                <label>Check-Out <input class="nsbs" type="date" name="checkout"></label>
+                <label>Room Type
+                    <select name="roomType" id="tiRoomType">
+                        <option value="" selected disabled>--Select Room Type--</option>
+                        <option value="smallroomone">Small room, one twin bed</option>
+                        <option value="medroomtwo">Medium room, two twin beds</option>
+                        <option value="largeroomone">Large room, one king bed</option>
+                        <option value="largeroomtwo">Large room, two queen beds</option>
+                    </select>
+                </label>
+                <label>Adults <input type="number" name="adults" min="1" max="5" class="widerField nsbs">Children <input type="number" name="children" min="1" max="5" class="widerField nsbs"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Acomodations</legend>
+                <label><input type="checkbox" value="wheelChair" name="acomodations" class="sbs"> Wheel chair friendly</label>
+                <label><input type="checkbox" value="visualAid" name="acomodations" class="sbs"> Visualy impaired friendly</label>
+                <label><input type="checkbox" value="babyOn" name="acomodations" class="sbs"> Baby friendly</label>
+                <label>Comments:</label><textarea name="comments" rows="10" cols="50"></textarea>
+            </fieldset>
+            <input type="submit" value="Make Reservation" class="btn">
+        </form>
+        <div class="imageContainer">
+            <img src="/assignments/termproject/images/temples/salt-lake/bom-display.jpg" alt="Reservations page image">
+        </div>
+
+        </div>
         
     </main>
     <!-- Footer -->

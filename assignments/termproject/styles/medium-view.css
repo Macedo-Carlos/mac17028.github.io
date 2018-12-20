@@ -150,3 +150,20 @@ header {
     box-shadow: var(--shadow);
     padding: 20px;
 }
+
+/* Page under construction */
+
+.bigLetters {
+    font-size: 5rem;
+}
+
+/* Reservations page */
+.subHeader {
+    margin-bottom: 20px;
+}
+
+.formArea {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'form imageContainer'
+}

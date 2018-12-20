@@ -245,8 +245,14 @@ footer a{
 
 .bigLetters {
     font-family: var(--titleText);
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
+}
+
+.medLetters {
+    padding: 10px 20px;
+    margin-top: 0px;
+    
 }
 
 .singleBtn {
@@ -323,4 +329,72 @@ footer a{
     display: flex;
     align-items: center;
     height: 40px;;
+}
+
+/* Reservations page */
+.subHeader p {
+    padding: 0px 20px;
+    margin: 0px;
+}
+
+.subHeader a{
+    text-decoration: none;
+}
+
+.formArea {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'form'
+    'imageContainer';
+    padding: 0px 20px;
+    margin-bottom: 30px;
+}
+
+.formArea form {
+    grid-area: form;
+}
+
+form legend {
+    padding: .5rem;
+    font-size: .85rem;
+}
+
+.formArea form fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.nsbs {
+    display: block;
+}
+
+.formArea form fieldset input {
+    border-radius: 5px;
+    padding: .75rem;
+    max-width: 20rem;
+}
+
+.formArea form fieldset label {
+    padding-top: 1.25rem;
+    display: inline-block;
+}
+
+.widerField {
+    width: 6rem;
+}
+
+/* Contact Page */
+
+.imageContainer {
+    grid-area: imageContainer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    align-content: start;
 }
