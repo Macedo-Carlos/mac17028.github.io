@@ -24,6 +24,7 @@
     border: 0;
     font-family: var(--titleText);
     font-size: 1.125rem;
+    width: 100%;
 
 }
 
@@ -377,6 +378,9 @@ form legend {
     border-radius: 5px;
     padding: .75rem;
     max-width: 20rem;
+    margin-top: 0.25rem;
+    border: 1px solid grey;
+    background: rgba(114, 114, 114, 0.125)
 }
 
 .formArea form fieldset label {
@@ -397,4 +401,9 @@ form legend {
     grid-gap: 20px;
     padding: 20px;
     align-content: start;
+}
+
+.imageContainer iframe {
+    width: 100%;
+    height: 250px;
 }
