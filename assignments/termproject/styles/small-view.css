@@ -372,13 +372,15 @@ form legend {
 
 .nsbs {
     display: block;
+    margin-left: 1px;
 }
 
 .formArea form fieldset input {
     border-radius: 5px;
-    padding: .75rem;
+    padding: .5rem;
     max-width: 20rem;
     margin-top: 0.25rem;
+    margin-left: 1px;
     border: 1px solid grey;
     background: rgba(114, 114, 114, 0.125)
 }
@@ -390,6 +392,16 @@ form legend {
 
 .widerField {
     width: 6rem;
+}
+
+textarea {
+    border-radius: 5px;
+    padding: .5rem;
+    max-width: 20rem;
+    margin-top: 0.25rem;
+    margin-left: 1px;
+    border: 1px solid grey;
+    background: rgba(114, 114, 114, 0.125)
 }
 
 /* Contact Page */
