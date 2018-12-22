@@ -404,6 +404,20 @@ textarea {
     background: rgba(114, 114, 114, 0.125)
 }
 
+select {
+    border-radius: 5px;
+    padding: .5rem;
+    max-width: 20rem;
+    margin-top: 0.25rem;
+    margin-left: 1px;
+    border: 1px solid grey;
+    background: rgba(114, 114, 114, 0.125)
+}
+
+.req {
+    color: #ab0011;
+}
+
 /* Contact Page */
 
 .imageContainer {
