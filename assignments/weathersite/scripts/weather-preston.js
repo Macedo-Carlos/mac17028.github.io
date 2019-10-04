@@ -1,14 +1,18 @@
+// AJAX Request
 var weatherRequest = new XMLHttpRequest();
 var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ecb60c79e171db217892f089857b991b";
 
-weatherRequest.open('GET', apiURL, true);
+weatherRequest.open('GET', apiURL, true); //open() method
 weatherRequest.responseType = "text";
-weatherRequest.send();
+weatherRequest.send(); //
 
-weatherRequest.onload = function() {
-    var jsonWeatherData = JSON.parse(weatherRequest.response);
+// AJAX Response
+weatherRequest.onload = function() { //Once the browser receives the response
+    if (weatherRequest.status === 200){
+    var jsonWeatherData = JSON.parse(weatherRequest.response); // Code to process the results from the server
     populateWeatherData(jsonWeatherData);
     calculateWindChill(jsonWeatherData);
+    }
 }
 
 function populateWeatherData(weatherData) {
