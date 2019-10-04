@@ -269,7 +269,7 @@ article h2 {
 .polaroid {
     padding: 10px;
     width: 250px;
-    border: 1.5px solid rgb(125, 125, 125);
+    border: 1px solid rgb(125, 125, 125);
     text-align: center;
     cursor: pointer;
     justify-self: center;
